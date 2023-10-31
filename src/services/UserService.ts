@@ -30,7 +30,17 @@ export class UserService {
     }
 
     getAllUsers = () => {
-        return this.db
+        return console.log('os usuarios são:', this.db)
     }
+
+    deleteUser = (name: string, email: string) => {
+        const user = {
+            name,
+            email
+        }
+
+        console.log('Deletando usuário...', this.db)
+    }
+
 }
 
